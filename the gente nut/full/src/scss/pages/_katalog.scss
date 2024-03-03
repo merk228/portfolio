@@ -1,0 +1,297 @@
+//bloc1
+
+.katalog1__wrapper {
+  margin-top: 165px;
+}
+
+.headerv2 {
+  position: absolute;
+}
+
+.big-lemon {
+  max-width: 520px;
+  height: 160px;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: auto;
+
+  .bloc3__title {
+    padding-top: unset;
+  }
+}
+
+.katalog1v1 .bloc3__products {
+  margin-top: 91px;
+  padding-bottom: 14px;
+  margin-left: auto;
+}
+
+.katalog1 {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  &__wrapper {
+    row-gap: 22px;
+    display: grid;
+  }
+
+  &__title {
+    text-align: center;
+    @include title;
+  }
+
+  &__list .bloc-lemon {
+    background-size: 100%;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 72px;
+    padding-bottom: 110px;
+  }
+
+
+  &__list-item {
+    width: 248px;
+  }
+
+  &__list-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    color: #6A3834;
+    font-family: 'Arial';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+  }
+
+  &__list-link.active,
+  &__list-link:hover {
+    background-image: url('../img/katalog/icon/decor.svg');
+    background-position: 0px -1px;
+    background-size: 247px 82px;
+  }
+
+}
+
+
+.content_box .bloc3 {
+  display: none;
+  animation: moving .5s ease;
+}
+
+
+@keyframes moving {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+}
+
+.bloc3.active {
+  display: block;
+}
+
+
+.content_box.active .bloc3 {
+  display: block;
+}
+
+
+//bloc3
+
+.katalog .big-gente {
+  margin-top: 72px;
+}
+
+.hit {
+  position: absolute;
+  width: 89px;
+  height: 86px;
+  z-index: 10;
+  top: -30px;
+  left: -18px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6A3834;
+  text-align: center;
+  font-family: "Lifehack Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 48px */
+  text-transform: uppercase;
+}
+
+
+
+.katalog .bloc3__products {
+  justify-content: unset;
+  margin-top: 76px;
+  row-gap: 80px;
+  padding-bottom: 55px;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.katalog-products .bloc3__item {
+  margin: unset;
+  position: relative;
+}
+
+.big-gente {
+  max-width: 759px;
+  height: 160px;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: auto;
+}
+
+.big-gente .bloc3__title {
+  padding-top: unset;
+}
+
+.katalog3__txt {
+  color: #6A3834;
+  text-align: center;
+  font-family: 'Arial';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  max-width: 620px;
+  margin: 0 auto;
+  padding-top: 12px;
+}
+
+
+//bloc4
+
+.katalog4__txt {
+  color: #6A3834;
+  text-align: center;
+  font-family: 'Arial';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  max-width: 919px;
+  margin: auto;
+  margin-top: 22px;
+}
+
+.katalog-v2 .bloc3__products {
+  justify-content: unset;
+  row-gap: 84px;
+  padding-bottom: 159px;
+  margin-top: 76px;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.katalog-v2 .big-gente {
+  margin-top: 68px;
+}
+
+
+
+//adaptive
+
+@media(max-width:1024px) {
+
+  .katalog .bloc3__products,
+  .katalog-v2 .bloc3__products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .katalog1__title {
+    margin-top: 30px;
+  }
+
+}
+
+@media (max-width:800px) {
+
+  .katalog .bloc3__products,
+  .katalog-v2 .bloc3__products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .big-gente {
+    max-width: 340px;
+    height: 76px;
+    background-size: 100% 100%;
+
+    .bloc3__title {
+      @include mob-title;
+      max-width: 340px;
+    }
+
+  }
+}
+
+@media (max-width:600px) {
+
+  .katalog .bloc3__products,
+  .katalog-v2 .bloc3__products {
+    display: none;
+  }
+
+  .hit {
+    display: none;
+  }
+
+  .big-lemon {
+    max-width: 340px;
+    height: 76px;
+    background-size: 100% 100%;
+  }
+
+
+  .katalog1v1 .big-lemon {
+    margin-top: 40px;
+    margin-bottom: 8px;
+  }
+
+  .katalog1 {
+
+    &__list,
+    &__title {
+      display: none;
+    }
+  }
+
+  .katalog4__txt,
+  .katalog3__txt {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 340px;
+  }
+
+  .katalog-v2 .big-gente,
+  .katalog .big-gente {
+    margin-top: unset;
+  }
+}
