@@ -1,0 +1,55 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: local('Arial Bold'),
+    url('../fonts/bold-arial.ttf');
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: local('Arial Regular'),
+    url('../fonts/Arial\ Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: local('Arial Bold'),
+    url('../fonts/bold-arial.ttf');
+}
+
+@font-face {
+  font-family: 'Lifehack Sans';
+  src: local('Lifehack Sans Medium'),
+    url('../fonts/lifehack-sans-mediaum.ttf');
+}
+
+@font-face {
+  font-family: 'Lifehack Sans';
+  src: local('Lifehack Sans Regular'),
+    url('../fonts/lifehack-regular-3.ttf');
+}
+
+@font-face {
+  font-family: 'Lab Grotesque';
+  src: local('Lab Grotesque Bold'),
+    url('../fonts/LabGrotesque-Bold.ttf');
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  overflow-x: hidden;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.inner {
+  position: absolute;
+  width: 100%;
+}

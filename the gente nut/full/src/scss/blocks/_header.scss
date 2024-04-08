@@ -1,0 +1,64 @@
+.header {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+  width: 100%;
+
+  // .header__row
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  // .header__nav
+
+  &__nav {
+    pointer-events: all;
+    margin-top: 43px;
+  }
+
+  &__list {
+    display: flex;
+    column-gap: 26px;
+    color: #6A3834;
+    font-family: 'Arial';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  &__link {
+    color: #6A3834;
+  }
+}
+
+.logo {
+  margin-top: 22px;
+  pointer-events: all;
+}
+
+.mobile-nav-btn {
+  pointer-events: all;
+  display: none;
+}
+
+
+//adaptive
+
+@media (max-width:800px) {
+
+  .header {
+    &__nav {
+      display: none;
+    }
+
+  }
+
+
+  .mobile-nav-btn {
+    display: block;
+  }
+}

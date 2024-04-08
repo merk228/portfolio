@@ -1,0 +1,150 @@
+.kontact {
+  background-size: 100% 100%;
+  background-repeat: none;
+  // .kontact__title
+
+  &__title {
+    @include title;
+    text-align: center;
+  }
+
+  // .kontact__txt-info
+
+  &__txt-info {
+    color: #6A3834;
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 62px;
+
+    .kontact__tel,
+    .kontact__mail {
+      color: #6A3834;
+    }
+
+    .kontact__mail {
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+
+  }
+
+  // .kontact__form
+
+  &__form {
+    padding-bottom: 151px;
+    margin-top: 76px;
+    display: flex;
+    column-gap: 40px;
+    justify-content: center;
+  }
+
+  // .kontact__input-all
+
+  &__input-all {
+    display: flex;
+    flex-direction: column;
+    row-gap: 17px;
+  }
+
+  // .kontact__form-input
+
+  &__form-input {
+    width: 360px;
+    height: 66px;
+    background-size: 100% 100%;
+    background-repeat: none;
+    padding: 0 20px;
+
+    &::placeholder {
+      color: #6A3834;
+    }
+  }
+
+  &__textarea-mob {
+    display: none;
+  }
+
+  // .kontact__textarea
+  &__textarea-mob,
+  &__textarea {
+    width: 758px;
+    height: 240px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 24px 20px;
+    list-style-type: none;
+    outline: none;
+    resize: none;
+
+    &::placeholder {
+      color: #6A3834;
+    }
+  }
+}
+
+.container {
+
+  // .container_margin
+
+  &_margin {
+    padding-top: 167px;
+  }
+}
+
+
+//adaptive
+
+@media(max-width:1180px) {
+
+  .kontact__textarea-mob,
+  .kontact__form-input {
+    display: block;
+    width: 340px;
+  }
+
+  .kontact__textarea {
+    display: none;
+  }
+
+  .kontact__form {
+    flex-direction: column;
+    row-gap: 13px;
+    align-items: center;
+  }
+}
+
+@media(max-width:840px) {
+  .kontact__title {
+    margin-top: 20px;
+  }
+}
+
+@media(max-width:600px) {
+  .kontact__title {
+    @include mob-title;
+    margin: auto;
+    max-width: unset;
+    margin-top: 20px;
+  }
+
+  .kontact__txt-info {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 14px;
+  }
+
+  .kontact__form {
+    padding-bottom: 80px;
+    margin-top: 18px;
+  }
+
+  .kontact__form-input,
+  .kontact__textarea::placeholder {
+    font-size: 16px;
+  }
+
+}

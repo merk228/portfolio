@@ -1,0 +1,183 @@
+//bloc5
+
+.swiper3 {
+    width: 100%;
+    height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+        display: block;
+    position: relative;
+    padding:127px 0 117px;
+    position: relative;
+  }
+
+  .swiper-wrappe3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+    box-sizing: content-box;
+
+}
+
+.container-sw3{
+    max-width: 1128px;
+    margin: 0 auto;
+    
+}
+
+.button-prev1,
+.button-next1{
+cursor: pointer;
+width: 38px;
+height: 60px;
+position: absolute;
+z-index: 1;
+}
+
+.button-prev1{
+    left:20px;
+    top:259px;
+}
+
+.button-next1{
+    right: 20px;
+    top:259px;
+}
+
+.title1,
+.info1{
+    max-width:269px;
+}
+
+.title2,
+.info2{
+    max-width:183px;
+}
+
+
+.title3{
+    max-width:215px;
+}
+
+.info3{
+    max-width: 183px;
+}
+
+.txt1{
+    max-width: 328px;
+}
+
+.txt2{
+max-width: 281px;
+}
+
+.bloc5 {
+position: relative;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+    // .bloc5__slide1
+
+
+    &__slide {
+        display: grid;
+        justify-items: center;
+        max-width: 328px;
+        margin: auto;
+    }
+
+    // .bloc5__img
+
+    &__img {
+    }
+
+    // .bloc5__title
+
+    &__title {
+color: #6A3834;
+text-align: center;
+margin-top: 45px;
+font-family: 'Lifehack Sans';
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 48px */
+    }
+
+    // .bloc5__info
+
+    &__info {
+        color: #6A3834;
+        font-family:'Lifehack Sans';
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom:48px;
+    }
+
+    // .bloc5__txt
+
+    &__txt {
+        @include style-txt;
+        font-family: 'Arial';
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    // .bloc5__slide2
+}
+
+
+//adaptive
+
+@media (max-width:400px){
+    
+    .swiper3{
+        padding: 98px 0 90px;
+    }
+    
+    .button-prev1,
+    .button-next1 {
+    width: 25px;
+    height: 40px;
+    top: 220px;
+    }
+    
+    .bloc5{
+        &__img img{
+    width: 263px;
+    height: 199px;
+        }
+    
+    &__title{
+font-size: 35px;
+max-width: 222px;
+    }
+    
+&__info{
+    margin: 17px 0 36px 0;
+    font-size: 25px;
+    max-width: 222px;
+}
+
+&__txt{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+    }
+    
+}
+
