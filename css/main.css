@@ -384,12 +384,15 @@ body {
    text-align: center;
    font-size: 30px;
    color: white;
-   line-height: 50px;
 }
 
 .skils__txt2 {
    font-size: 25px;
    color: white;
+}
+
+.skils__txt2 {
+   line-height: 50px;
 }
 
 .skils__img {
