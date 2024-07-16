@@ -216,6 +216,24 @@ body {
 .header {
    background-color: #DD8B2D;
    height: 95px;
+   position: relative;
+   overflow: hidden;
+}
+
+.header .container {
+   position: relative;
+   z-index: 9;
+}
+
+.header-video {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   opacity: 0.75;
 }
 
 .header a {
